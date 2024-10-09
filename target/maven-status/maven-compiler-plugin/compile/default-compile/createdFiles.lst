@@ -1,0 +1,5 @@
+PageObjects\PropertyManagerPage.class
+PageObjects\SignInPage.class
+PageObjects\HomePage.class
+Base\BaseSetup.class
+Base\Waits.class

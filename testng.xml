@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Entrata Test Suite">
+  <test thread-count="1" name="HomePageVerification">
+  <classes>
+         
+             <class name="Entrata_Test_Cases.HomePageVerificationTest"/>
+              <class name="Entrata_Test_Cases.VerifyListOfResourcesTest"/> 
+                 <class name="Entrata_Test_Cases.UsernameAndPasswordVisibilityTest"/>
+        </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

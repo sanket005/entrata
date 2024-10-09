@@ -1,0 +1,21 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 2, Time elapsed: 29.565 s <<< FAILURE! - in TestSuite
+Entrata_Test_Cases.UsernameAndPasswordVisibilityTest.setup  Time elapsed: 8.82 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <a href="/sign-in" class="signin-button mb-full">...</a> is not clickable at point (1178, 49). Other element would receive the click: <a href="/sign-in" class="signin-button mb-full">...</a>
+  (Session info: chrome=129.0.6668.90)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ea5457d6903d8f27a454d4b9185d0c4f, clickElement {id=f.7729F1BD953DA4272342747A442942B1.d.E6361481183839DFF3B1B9EA557A0A82.e.39}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.91 (b00bc8b76d60..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58574}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58574/devtoo..., se:cdpVersion: 129.0.6668.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ea5457d6903d8f27a454d4b9185d0c4f)] -> link text: Sign In]
+Session ID: ea5457d6903d8f27a454d4b9185d0c4f
+	at Entrata_Test_Cases.UsernameAndPasswordVisibilityTest.setup(UsernameAndPasswordVisibilityTest.java:36)
+
+Entrata_Test_Cases.VerifyListOfResourcesTest.VerifyResources  Time elapsed: 1.557 s  <<< FAILURE!
+java.lang.AssertionError: Dropdown values do not match expected values!: Lists differ at element [0]: All Resources !=  expected [All Resources] but found []
+	at Entrata_Test_Cases.VerifyListOfResourcesTest.VerifyResources(VerifyListOfResourcesTest.java:50)
+

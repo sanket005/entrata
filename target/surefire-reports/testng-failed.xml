@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="1" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="Entrata_Test_Cases.UsernameAndPasswordVisibilityTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+          <include name="avaibilityOfUsernameandPassword"/>
+        </methods>
+      </class> <!-- Entrata_Test_Cases.UsernameAndPasswordVisibilityTest -->
+      <class name="Entrata_Test_Cases.VerifyListOfResourcesTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+          <include name="VerifyResources"/>
+        </methods>
+      </class> <!-- Entrata_Test_Cases.VerifyListOfResourcesTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->
