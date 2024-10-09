@@ -8,6 +8,6 @@ This project contains Selenium tests for validating the functionality.
 - Fill the data in property and Test data file if you want to change something.
 
  **How to run**
-1. Clone the repository by using command git clone <>
+1. Clone the repository by using command git clone <https://github.com/sanket005/entrata.git>
 2. Make the changes in configuration file if you want.
 3. run the maven command mvn clean, mvn build, mvn test or mvn verify 
