@@ -42,11 +42,9 @@ public class VerifyListOfResourcesTest extends Waits {
 		for (WebElement option : resourceList) {
 			String text = option.getText();
 			optionTexts.add(text);
-			System.out.println(text); // Print the option text
+			System.out.println(text); 
 		}
-		List<String> expectedValues = List.of("All Resources", "Guides", "Webinars", "Resident Experts", "Blog"); // Adjust
-																													// as
-																													// needed
+		List<String> expectedValues = List.of("All Resources", "Guides", "Webinars", "Resident Experts", "Blog"); 
 		Assert.assertEquals(optionTexts, expectedValues, "Dropdown values do not match expected values!");
 
 	}
