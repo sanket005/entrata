@@ -3,7 +3,15 @@
 <test thread-count="1" name="VerifyAllTestCases">
   <classes>
              <class name="Entrata_Test_Cases.HomePageVerificationTest"/>
+        </classes>
+  </test> <!-- Test -->
+  <test thread-count="1" name="VerifyAllTestCases">
+  <classes>
              <class name="Entrata_Test_Cases.VerifyListOfResourcesTest"/> 
+        </classes>
+  </test> <!-- Test -->
+  <test thread-count="1" name="VerifyAllTestCases">
+  <classes>
                <class name="Entrata_Test_Cases.UsernameAndPasswordVisibilityTest"/>
         </classes>
   </test> <!-- Test -->
