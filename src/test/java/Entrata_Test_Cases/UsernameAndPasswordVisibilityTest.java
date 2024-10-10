@@ -24,17 +24,19 @@ public class UsernameAndPasswordVisibilityTest extends Waits{
 	
 	@BeforeMethod
 	public void setup() throws InterruptedException {
-		driver = browserSetup();
+	driver = browserSetup();
 		HomeObject = new HomePage(driver);
 		 wait = Explicitlywait(20, driver);	
-		wait.until(ExpectedConditions.visibilityOf(HomeObject.getcancelCookies()));
-		HomeObject.getcancelCookies().click();
-		Thread.sleep(3000);
-		wait.until(ExpectedConditions.visibilityOf(HomeObject.getLoginButton()));
-		HomeObject.getLoginButton().click();
+		wait.until(ExpectedConditions.visibilityOf(HomeObject.getcancelCookies())).click();//Cancel cookies
+		
+		wait.until(ExpectedConditions.elementToBeClickable(HomeObject.getLoginButton()));
+		WebElement loginButton = HomeObject.getLoginButton();
+		((JavascriptExecutor) driver).executeScript("arguments[0].click();", loginButton);//Click on SignIn button
+
 		ProprertyManagerObject=new PropertyManagerPage(driver);
-		ProprertyManagerObject.getcancelCookies().click();
-		ProprertyManagerObject.getPropertyManagerLogin().click();
+		wait.until(ExpectedConditions.elementToBeClickable(ProprertyManagerObject.getcancelCookies())).click();//Cancel on Proprerty Manager page cookies.
+
+		wait.until(ExpectedConditions.elementToBeClickable(ProprertyManagerObject.getPropertyManagerLogin())).click();//Click on Proprerty Manager Login button
 	}
 	@Test
 	public void avaibilityOfUsernameandPassword() {
