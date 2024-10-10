@@ -2,9 +2,10 @@
 <suite name="Entrata Test Suite">
 <test thread-count="1" name="VerifyAllTestCases">
   <classes>
-      <class name="Entrata_Test_Cases.HomePageVerificationTest"/>
-     <class name="Entrata_Test_Cases.VerifyListOfResourcesTest"/> 
-     <class name="Entrata_Test_Cases.UsernameAndPasswordVisibilityTest"/>
+            
+             <class name="Entrata_Test_Cases.VerifyListOfResourcesTest"/> 
+              <class name="Entrata_Test_Cases.HomePageVerificationTest"/>
+               <class name="Entrata_Test_Cases.UsernameAndPasswordVisibilityTest"/>
         </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
