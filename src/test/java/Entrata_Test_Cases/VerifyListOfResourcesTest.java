@@ -36,7 +36,7 @@ public class VerifyListOfResourcesTest extends Waits {
 		mouse = new Actions(driver);
 		wait.until(ExpectedConditions.visibilityOf(HomeObject.getResources()));
 		mouse.moveToElement(HomeObject.getResources()).build().perform();
-		//wait.until(ExpectedConditions.visibilityOfAllElements(HomeObject.getResourcesList()));
+		wait.until(ExpectedConditions.visibilityOfAllElements(HomeObject.getResourcesList()));
 		List<WebElement> resourceList = HomeObject.getResourcesList();
 		List<String> optionTexts = new ArrayList<>();
 
