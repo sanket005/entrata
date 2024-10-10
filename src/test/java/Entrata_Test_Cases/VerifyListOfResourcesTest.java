@@ -26,7 +26,7 @@ public class VerifyListOfResourcesTest extends Waits {
 	public void setup() {
 		driver = browserSetup();
 		HomeObject = new HomePage(driver);
-		wait = Explicitlywait(10, driver);
+		wait = Explicitlywait(20, driver);
 		wait.until(ExpectedConditions.visibilityOf(HomeObject.getcancelCookies()));
 		HomeObject.getcancelCookies().click();
 	}
