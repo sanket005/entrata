@@ -27,7 +27,7 @@ public class BaseSetup {
 		driver.manage().window().maximize();
 		driver.get(property(Configpath).getProperty("URL"));
 		
-		Waits.Implicitlywait(driver, 30);
+		Waits.Implicitlywait(driver, 50);
 		return driver;
 	}
 
